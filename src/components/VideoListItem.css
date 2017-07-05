@@ -1,0 +1,7 @@
+.VideoListItem {
+  cursor: pointer;
+}
+
+.VideoListItem:hover {
+  background-color: #eee;
+}
