@@ -11,6 +11,7 @@ class SearchBar extends Component {
 
   handleChange(event) {
     this.setState({ term: event.target.value });
+    this.props.searchVideo({ term: event.target.value });
   }
 
   render() {
