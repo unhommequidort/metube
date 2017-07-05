@@ -15,21 +15,15 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <form className="SearchBar">
-        <div className="form-group">
-          <label htmlFor="main-search" className="sr-only">
-            Search MeTube
-          </label>
-          <input
-            id="main-search"
-            className="form-control"
-            type="text"
-            placeholder="Search MeTube"
-            value={this.state.term}
-            onChange={this.handleChange}
-          />
-        </div>
-      </form>
+      <div className="SearchBar">
+        <input
+          id="main-search"
+          type="text"
+          placeholder="Search MeTube"
+          value={this.state.term}
+          onChange={this.handleChange}
+        />
+      </div>
     );
   }
 }
